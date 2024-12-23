@@ -1,0 +1,70 @@
+.descriptionbox {
+  margin: 120px 170px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.descriptionbox-navigator {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.descriptionbox-nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 150px;
+  height: 40px;
+  gap: 20px;
+  color: #555;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.descriptionbox-nav-box:hover {
+  background-color: #f0f0f0;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.descriptionbox-description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 1px solid #f4f4f4;
+  padding: 18px;
+  padding-bottom: 50px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+}
+
+.descriptionbox-description p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descriptionbox-description p:first-child {
+  margin-top: 0;
+}
+
+.descriptionbox-description p:last-child {
+  margin-bottom: 0;
+}
+
+.descriptionbox-description p {
+  transition: color 0.3s ease;
+}
+
+.descriptionbox-description p:hover {
+  color: red;
+}

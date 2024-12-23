@@ -1,0 +1,85 @@
+.popular {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: auto; /* Adjust height to auto for better responsiveness */
+  padding: 50px 20px; /* Add some padding for spacing */
+  background-color: #f8f8f8; /* Subtle background color for the section */
+}
+
+.popular h1 {
+  color: #171717;
+  font-size: 40px; /* Slightly smaller for better readability */
+  font-weight: 600;
+  text-align: center; /* Center align the heading */
+  margin-bottom: 20px;
+}
+
+.popular hr {
+  width: 150px; /* Adjusted width */
+  height: 4px; /* Slightly thinner for a cleaner look */
+  border-radius: 10px;
+  background: #ff4141; /* Change to a color matching your theme */
+  margin-bottom: 40px; /* Added space below the line */
+}
+
+.popular-item {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Allow wrapping for responsive layout */
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .popular h1 {
+    font-size: 32px; /* Adjust font size on smaller screens */
+  }
+
+  .popular-item {
+    gap: 15px; /* Smaller gap between items for mobile */
+    justify-content: space-between; /* Spread items evenly */
+  }
+
+  .item {
+    width: 200px; /* Adjust item width for small screens */
+  }
+}
+/* Media Query for 250px */
+@media (max-width: 250px) {
+  .popular h1 {
+    font-size: 24px; /* Further reduced font size */
+  }
+
+  .popular hr {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: 2px;
+  }
+
+  .item {
+    width: 80px; /* Reduced width for items */
+  }
+
+  .item img {
+    width: 100%; /* Image adapts to item container width */
+    height: auto;
+  }
+
+  .item p {
+    font-size: 12px; /* Smaller text for item names */
+  }
+
+  .item-prices {
+    gap: 3px;
+  }
+
+  .item-price-new {
+    font-size: 14px;
+  }
+
+  .item-price-old {
+    font-size: 10px;
+  }
+}
